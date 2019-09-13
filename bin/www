@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+// Not used!
+
+
+var debug = require('debug')('canvas-server');
+var app = require('../app');
+
+
+app.set('port', process.env.PORT || 3000);
+
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+});
+
+// Socket setup: // moved to 'user/{userid}/live'
+// var socket = require('socket.io');
+// var io = socket(server);
+//
+// io.on('connection', function(socket) {
+//   console.log('made socket connection');
+// })

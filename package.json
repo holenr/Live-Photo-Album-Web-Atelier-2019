@@ -1,0 +1,39 @@
+{
+  "name": "live-photo-album-wa-retake-2019",
+  "version": "0.0.0",
+  "description": "A personal project as basis for the retake exam of the Web Atelier September 2019",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "npm run test-mocha",
+    "test-mocha": "./node_modules/mocha/bin/mocha -R spec ./test/routes ./test/hypermedia"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "REST"
+  ],
+  "author": "Roland Holenstein",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "debug": "^3.1.0",
+    "dustjs-linkedin": "^2.7.5",
+    "express": "^4.16.4",
+    "klei-dust": "^1.0.0",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.4.0",
+    "morgan": "^1.9.0",
+    "multer": "^1.4.2",
+    "request": "^2.88.0",
+    "socket.io": "^2.2.0",
+    "supertest": "^3.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^4.1.0",
+    "should": "^13.2.3"
+  }
+}

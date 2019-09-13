@@ -1,0 +1,16 @@
+<body>
+
+<span class="gallery">
+
+  <a href="/user/{userId}/pictures/{_id}">
+    <img class="thumbnail_pic" src="{dataURL}" alt="{originalname}" width="25%" height="25%">
+  </a>
+
+  <form method="POST" action="/user/{userId}/pictures/{_id}?_method=PUT">
+    <input type="submit" formaction="/user/{userId}/pictures/{_id}?_method=DELETE" name="delete" value="delete">
+  </form>
+
+</span>
+
+
+</body>

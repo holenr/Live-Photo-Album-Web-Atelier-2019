@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Live Photo Album - Full Screen Picture</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+
+<body>
+<h1>User's Page</h1>
+
+<h2>Picture: {_id}</h2>
+
+<img class="fullscreen_pic" src="{dataURL}" alt="{originalname}" width="85%" height="85%">
+
+</body>
+
+
+
+
+
+</html>

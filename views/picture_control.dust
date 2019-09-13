@@ -1,0 +1,4 @@
+
+
+
+<img id="{_id}" class="selectable_pic thumbnail_pic" src="{dataURL}" alt="{originalname}" width="25%" height="25%">

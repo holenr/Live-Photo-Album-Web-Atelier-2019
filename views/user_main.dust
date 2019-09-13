@@ -1,0 +1,29 @@
+<h1>{username}'s Photo Album</h1>
+
+
+<h2>Upload New Picture:</h2>
+<form id="picture-upload-form" method="POST" action="/user/{_id}/pictures"?_method=POST" enctype="multipart/form-data">
+  <input type="file" name="picture" accept="image/*" size="40">
+  <input type="submit" name="submit" value="Upload">
+</form>
+
+<h2>Your Gallery:</h2>
+<form method="GET" action="/user/{_id}/pictures" >
+  <input type="submit" value="Browse Pictures" class="function-button">
+</form>
+
+
+<h2>Live Slideshows:</h2>
+
+<div id="slideshow-buttons">
+
+  <form method="POST" action="/user/{_id}/live/control?userid={_id}" >
+    <input type="submit" value="Broadcast Slideshow" class="function-button">
+  </form>
+
+  <form method="POST" action="/user/{_id}/live?userid={_id}" >
+    <input type="submit" value="View Other Slideshows" class="function-button">
+  </form>
+
+
+</div>

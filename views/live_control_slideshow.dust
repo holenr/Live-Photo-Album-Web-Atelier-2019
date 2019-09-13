@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Slideshow Live Control</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+
+<body>
+
+<h1>Broadcast Slideshow</h1>
+<p>Click a picture to to start the live slideshow or to switch between current picture being broadcasted.</p>
+
+<h2>Pictures:</h2>
+
+{# list}
+
+<span id="pictures_wrapper">
+	<!-- all pictures from Dust partial 'picture_control.dust' should appear here-->
+{> picture_control /}
+</span>
+
+{:else}
+<p>No pictures to broadcast.</p>
+
+{/ list}
+
+<h3>Currently Broadcasting Image:</h3>
+
+<div id="output">
+<img id="output_image" alt="slideshow-image" width="25%" height="25%"></img>
+</div>
+
+<!--Please note: javascript added to '/public' folder, as we are referencing this folder from here -->
+<script src="/control_slideshow.js"></script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Live Photo Album - Register</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="/style.css"> <!-- Doesn't work!? -->
+
+        <!-- <style>
+        .button {
+          width: 120px;
+          background-color: #4CAF50;
+          border-width: 1px;
+          border-color: green;
+          color: white;
+          padding: 15px 25px;
+          margin: 2px;
+          text-align: center;
+          font-size: 16px;
+          cursor: pointer;
+        }
+
+        .button:hover {
+          background-color: green;
+        }
+        </style> -->
+</head>
+
+
+<body>
+  <h1> Live Photo Album </h1>
+  <h2>Register</h2>
+
+
+  <form id="reg-form" method="POST" action="/account/register">
+    Username: <input type="text" name="username" required="true" minlength="4" maxlength="20" placeholder="Between 4 and 20 char"><br>
+    Password: <input type="password" name="password" required="true" minlength="4" maxlength="20" placeholder="Between 4 and 20 char"><br>
+    <!-- <input type="submit" value="Submit" formenctype="application/x-www-form-urlencoded" formaction="/login?_method=GET"> -->
+    <input type="submit" value="Submit" formenctype="application/x-www-form-urlencoded">
+  </form>
+
+
+
+
+
+
+
+</body>
+
+</html>

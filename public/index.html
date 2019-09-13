@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Live Photo Album - Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- <style>
+        .function-button {
+          width: 120px;
+          background-color: #4CAF50;
+          border-width: 1px;
+          border-color: green;
+          color: white;
+          padding: 15px 25px;
+          margin: 2px;
+          text-align: center;
+          font-size: 16px;
+          cursor: pointer;
+        }
+
+        .function-button:hover {
+          background-color: green;
+        }
+        </style> -->
+</head>
+
+<!-- <body onload="init()">
+    <h1> Live Photo Album </h1>
+    <div id="app">
+        <div id="left-toolbar" class="toolbar">
+            <button id="clear-btn">Clear</button>
+            <button id="undo-btn">Undo</button>
+            <button id="camera-btn"><i class="fa fa-camera" aria-hidden="true"></i></button>
+        </div>
+        <canvas id="canvas" width="600" height="400"></canvas>
+        <div id="brush-toolbar" class="toolbar">
+            Brushes buttons go here (programmatically). Each button should be a <button> element
+        </div>
+    </div>
+        <h2>Favourites</h2>
+        <div id="favorites">
+        {# list}
+        {> favorite /}
+        {/ list}
+        </div>
+    <script src="/scripts/brushes.js"></script>
+    <script src="/scripts/undo.js"></script>
+    <script src="/scripts/app.js"></script>
+    <script src="/main.js"></script>
+</body> -->
+
+<body>
+  <h1> Live Photo Album </h1>
+  <h2>Home</h2>
+
+<div id="home-functions">
+  <form method="GET" action="/register" >
+    <input type="submit" value="Register" class="function-button">
+  </form>
+
+  <form method="GET" action="/login" >
+    <input type="submit" value="Login" class="function-button">
+  </form>
+</div>
+
+<script src="/initial_socket_connection.js"></script>
+
+</body>
+
+</html>

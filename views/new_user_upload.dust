@@ -1,0 +1,28 @@
+<head>
+<script type='text/javascript'>
+
+  function preview_image(event) {
+     var reader = new FileReader();
+     reader.onload = function() {
+        var output = document.getElementById('output_image');
+        output.src = reader.result;
+     }
+     reader.readAsDataURL(event.target.files[0]);
+  }
+</script>
+</head>
+
+
+<body>
+<div id="wrapper">
+
+
+ <form id="picture-upload-form" method="POST" action="/user/{_id}/pictures"?_method=POST">
+   <input type="file" name="picture" accept="image/*" onchange="preview_image(event)">
+   <img id="output_image"/>
+   <input type="submit" name="submit" value="Upload">
+ </form>
+
+
+</div>
+</body>
