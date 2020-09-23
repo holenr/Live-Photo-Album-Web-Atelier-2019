@@ -1,9 +1,6 @@
 # live_photo_album_wa_2019_repload
-As basis for the retake exam of the Web Atelier September 2019. Reupload version 1.0
+As basis for the final exam of the Web Atelier September 2019. Reupload version 1.0
 
-
-# live_photo_album_wa_2019
-As basis for the retake exam of the Web Atelier September 2019.
 
 To run:
 
@@ -20,7 +17,7 @@ Run in console from repository live_photo_album_wa_2019:
 Previous Versions: v.0.1, v.0.2, v.0.3, v.0.4
 Current Version: v.1.0
 
-Working features:
+Features:
 
 1.) User registration/login
 
